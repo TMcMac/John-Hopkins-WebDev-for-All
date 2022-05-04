@@ -1,0 +1,85 @@
+/* Main style by broad tag*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: 1em;
+}
+
+/* Styles by class */
+.menu_item {
+    border: 2px solid black;
+    background-color: grey;
+    margin: 1em 3em;
+}
+
+.item_title {
+    width: 33%;
+    border: 2px solid black;
+    text-align: center;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+/* Styles by ID*/
+#menu1 {
+    background-color: salmon;
+}
+
+#menu2 {
+    color: white;
+    background-color: red;
+}
+
+#menu3 {
+    background-color: goldenrod;
+}
+
+
+/* MEDIA Queries by Screen Width*/
+/* Fullsized Screens */
+@media (min-width: 992px) {
+    .flex_box {
+        display: flex;
+    }
+
+    .menu_item {
+        flex: 1;
+        margin: 1em;
+    }
+
+    .item_title {
+        width: 40%;
+    }
+}
+
+/* Tablet sized screen */
+@media (max-width: 991px) {
+    .flex_box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu_item {
+        margin: 1em;
+    }
+
+    #one {
+        flex: 1;
+    }
+
+    #two {
+        flex: 1;
+    }
+}
+/* Mobile sized screens */
+@media (max-width: 768px) {
+    .flex_box {
+        display: block;
+    }
+}
